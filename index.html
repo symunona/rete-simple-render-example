@@ -4,11 +4,21 @@
     <title>Rete Simple Render Example</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="simplest.css">
-    <script type="importmap">
+    <!-- If you want local import maps, use this: -->
+    <script type="importmap-local">
         {
             "imports": {
                 "rete": "./node_modules/rete/build/rete.esm.js",
                 "rete-connection-plugin": "./node_modules/rete-connection-plugin/build/connection-plugin.esm.js"
+            }
+        }
+    </script>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "rete": "https://cdn.jsdelivr.net/npm/rete@1.5.0/+esm",
+                "rete-connection-plugin": "https://cdn.jsdelivr.net/npm/rete-connection-plugin@0.9.0/+esm"
             }
         }
     </script>
