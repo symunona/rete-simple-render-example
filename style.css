@@ -1,0 +1,38 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    background: black; color: white;
+}
+
+#rete {
+    height: 100% !important
+}
+
+#modules {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.module {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.module:hover {
+    color: #a167e7;
+}
+
+.node .socket.number {
+    background: #96b38a
+}
+
+.node .socket.float {
+    background: red;
+}
+
+.info{
+    width: 400px
+}

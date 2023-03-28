@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Rete Simple Render Example</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="simplest.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "rete": "./node_modules/rete/build/rete.esm.js",
+                "rete-connection-plugin": "./node_modules/rete-connection-plugin/build/connection-plugin.esm.js"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div al-app id="modules">
+        <div class="info">
+            <h2>ReteJS Custom Simple Renderer Demo without a bundler</h2>
+
+            <button onclick="exportJson()">Export to JSON console</button>
+            <button onclick="switchTo(1)">Dataset 1</button>
+            <button onclick="switchTo(2)">Dataset 2</button>
+        </div>
+    </div>
+    <div id="rete" class="node-editor"></div>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
